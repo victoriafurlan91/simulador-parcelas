@@ -1,3 +1,4 @@
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,11 +9,13 @@ body {
   justify-content: center;
 }
 
+/* CONTAINER */
 .container {
   width: 100%;
   max-width: 400px;
 }
 
+/* CARD */
 .card {
   background: #fff;
   padding: 25px;
@@ -20,11 +23,13 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* TÍTULO */
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* INPUTS */
 label {
   font-size: 14px;
   margin-top: 10px;
@@ -39,6 +44,7 @@ input {
   border: 1px solid #ccc;
 }
 
+/* RESULTADO */
 .resultado {
   margin-top: 20px;
   background: #f5f5f5;
@@ -48,4 +54,88 @@ input {
 
 .resultado p {
   margin: 5px 0;
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6a11cb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #5a0fb0;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* MENSAGEM */
+.mensagem {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* TAXA */
+.taxa {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* OPÇÕES */
+.opcoes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.opcao {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.opcao:hover {
+  background: #e0e0e0;
+}
+
+.opcao.ativa {
+  background: #6a11cb;
+  color: white;
+}
+
+.lista-parcelas {
+  display: none;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.item-parcela {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.item-parcela:hover {
+  background: #f5f5f5;
 }

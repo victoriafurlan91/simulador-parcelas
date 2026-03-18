@@ -3,28 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Simulador de Parcelas</title>
+
+  <!-- IMPORTANTE -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <div class="container">
     <div class="card">
-      <h1>Simulador de Parcelas</h1>
+
+      <h1>Simulador de Parcelas 💳</h1>
 
       <label>Valor (R$)</label>
       <input type="number" id="valor" placeholder="Ex: 1000">
 
+      <div id="opcoesParcelamento" class="opcoes"></div>
+
       <label>Parcelas</label>
       <input type="number" id="parcelas" placeholder="Ex: 12">
+      <div id="listaParcelas" class="lista-parcelas"></div>
 
-      <label>Juros (%)</label>
-      <input type="number" id="juros" placeholder="Ex: 2.5">
+      <p id="taxa" class="taxa">Taxa: --</p>
 
       <div class="resultado">
-        <p>Parcela: <span id="valorParcela">R$ 0,00</span></p>
-        <p>Total: <span id="total">R$ 0,00</span></p>
-        <p>Juros: <span id="totalJuros">R$ 0,00</span></p>
+        <p>Parcela: <strong id="valorParcela">R$ 0,00</strong></p>
+        <p>Total: <strong id="total">R$ 0,00</strong></p>
+        <p>Juros: <strong id="totalJuros">R$ 0,00</strong></p>
       </div>
+
+      <button id="copiar">Copiar simulação</button>
+      <p id="mensagem" class="mensagem">Copiado com sucesso!</p>
+
     </div>
   </div>
 
